@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/converter.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="valueColumn">
+    <input type="text" id="firstValue" class="value readonly calculate" readonly autocomplete="off" value="">
+    <br>
+    <input type="text" id="secondValue"  class="value readonly calculate" readonly autocomplete="off" value="">
+  </div>
+  <div class="currencyColumn">
+    <select id="firstCurrency" class="currencySelect readonly calculate" readonly>
+    </select>
+    <br>
+    <select id="secondCurrency" class="currencySelect readonly calculate" readonly>
+    </select>
+    <br>
+    <img src="icons/preloader.gif" alt="loading" id="preloader" style="display:none;">
+    <span id="errorMessage" style="display:none;"></span>
+  </div>
+</div>
+</body>
+</html>

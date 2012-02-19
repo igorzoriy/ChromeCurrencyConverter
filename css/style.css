@@ -1,0 +1,40 @@
+html, body
+{
+    background-color: #FFFFFF;
+    font: 12px Arial;
+    color: #000000;
+}
+
+.wrapper
+{
+    width: 300px;
+    min-height: 53px;
+}
+
+.wrapper .valueColumn
+{
+    float: left;
+    width: 100px;
+}
+
+.wrapper input.value
+{
+    width: 94px;
+    line-height: 18px;
+    margin: 2px 1px 2px 1px;
+    padding: 0;
+}
+
+.wrapper .currencyColumn
+{
+    float: left;
+    width: 200px;
+}
+
+.wrapper select.currencySelect
+{
+    width: 194px;
+    line-height: 18px;
+    margin: 2px 1px 2px 1px;
+    height: 22px;
+}
