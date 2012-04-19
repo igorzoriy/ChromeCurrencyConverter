@@ -107,7 +107,7 @@ converter.showError = function(message)
 converter.calculate = function()
 {
   var inValue, outValue, inCurrency, outCurrency;
-  if(this.id == 'secondValue')   // clculate rule
+  if(this.id == 'secondValue')   // calculate rule
   {
     inValue = 'secondValue';
     outValue = 'firstValue';
@@ -133,7 +133,9 @@ converter.calculate = function()
   var outCource = converter.currencyList[document.getElementById(outCurrency).value].course;
 
   // calclate output value
-  document.getElementById(outValue).value = parseFloat(inValue) * (inCourse / outCource);
+  var value = parseFloat(inValue) * (inCourse / outCource);
+  value = value.toFixed(2);
+  document.getElementById(outValue).value = value;
 }
 
 window.onload = converter.init;
